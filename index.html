@@ -388,7 +388,331 @@
             </div>
         </div>
     </section>
+<!-- Projects Showcase Section -->
+<section id="projects" class="py-16 md:py-24 px-4 bg-gray-100/50 dark:bg-gray-900/50">
+    <div class="container mx-auto">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured <span class="gradient-text">Projects</span></h2>
+            <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">A selection of my recent work showcasing design and development expertise</p>
+        </div>
 
+        <!-- Project Filter Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 mb-12 fade-in">
+            <button class="project-filter px-5 py-2 rounded-full font-medium transition-all bg-indigo-600 text-white" data-filter="all">
+                All Projects
+            </button>
+            <button class="project-filter px-5 py-2 rounded-full font-medium transition-all bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700" data-filter="web">
+                Web Apps
+            </button>
+            <button class="project-filter px-5 py-2 rounded-full font-medium transition-all bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700" data-filter="mobile">
+                Mobile Apps
+            </button>
+            <button class="project-filter px-5 py-2 rounded-full font-medium transition-all bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700" data-filter="design">
+                UI/UX Design
+            </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Project 1 -->
+            <div class="project-item bg-white dark:bg-card-dark rounded-2xl overflow-hidden shadow-lg card-hover" data-category="web">
+                <div class="relative overflow-hidden h-56">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="E-Commerce Platform" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-indigo-600 text-white text-xs font-medium rounded-full">Web App</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">NexaShop E-Commerce</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">A full-featured online marketplace with real-time inventory, payment processing, and admin dashboard.</p>
+                    <div class="flex flex-wrap gap-2 mb-5">
+                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full">React</span>
+                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full">Node.js</span>
+                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full">MongoDB</span>
+                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full">Stripe API</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="https://nexashop-demo.vercel.app" target="_blank" class="text-indigo-600 dark:text-indigo-400 font-medium hover:underline flex items-center">
+                            Live Demo <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                        </a>
+                        <button class="view-project-detail px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition" data-project="1">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-item bg-white dark:bg-card-dark rounded-2xl overflow-hidden shadow-lg card-hover" data-category="mobile">
+                <div class="relative overflow-hidden h-56">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Fitness App" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-emerald-600 text-white text-xs font-medium rounded-full">Mobile App</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">FitTrack Pro</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">A fitness tracking application with workout plans, nutrition logging, and progress analytics.</p>
+                    <div class="flex flex-wrap gap-2 mb-5">
+                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full">React Native</span>
+                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full">Firebase</span>
+                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full">Redux</span>
+                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full">HealthKit API</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="https://fittrack-demo.vercel.app" target="_blank" class="text-indigo-600 dark:text-indigo-400 font-medium hover:underline flex items-center">
+                            App Store <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                        </a>
+                        <button class="view-project-detail px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition" data-project="2">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-item bg-white dark:bg-card-dark rounded-2xl overflow-hidden shadow-lg card-hover" data-category="design">
+                <div class="relative overflow-hidden h-56">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Finance Dashboard" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="absolute top-4 right-4">
+                        <span class="px-3 py-1 bg-amber-600 text-white text-xs font-medium rounded-full">UI/UX Design</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">FinDash Analytics Suite</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">A comprehensive financial dashboard for visualizing investments, expenses, and market trends.</p>
+                    <div class="flex flex-wrap gap-2 mb-5">
+                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full">Figma</span>
+                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full">Adobe XD</span>
+                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full">Prototyping</span>
+                        <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full">User Research</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="https://dribbble.com/findash-design" target="_blank" class="text-indigo-600 dark:text-indigo-400 font-medium hover:underline flex items-center">
+                            Design File <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                        </a>
+                        <button class="view-project-detail px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition" data-project="3">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center fade-in">
+            <a href="#" class="inline-flex items-center px-6 py-3 border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 dark:border-indigo-400 font-medium rounded-full hover:bg-indigo-50 dark:hover:bg-indigo-900/30 transition">
+                View All Projects
+                <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Project Detail Modal -->
+<div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 hidden">
+    <div class="bg-white dark:bg-card-dark rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="sticky top-0 flex justify-between items-center p-6 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-card-dark">
+            <h3 class="text-2xl font-bold gradient-text" id="modal-title">Project Title</h3>
+            <button id="close-modal" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800">
+                <i class="fas fa-times text-gray-600 dark:text-gray-400"></i>
+            </button>
+        </div>
+        <div class="p-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                    <div class="rounded-xl overflow-hidden mb-6">
+                        <img id="modal-image" src="" alt="Project" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <!-- Tags will be inserted here by JavaScript -->
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Project Overview</h4>
+                    <p id="modal-description" class="text-gray-700 dark:text-gray-300 mb-6"></p>
+                    
+                    <h4 class="text-lg font-bold mb-4">Key Features</h4>
+                    <ul id="modal-features" class="text-gray-700 dark:text-gray-300 mb-6 space-y-2">
+                        <!-- Features will be inserted here by JavaScript -->
+                    </ul>
+                    
+                    <h4 class="text-lg font-bold mb-4">Technologies Used</h4>
+                    <div id="modal-technologies" class="flex flex-wrap gap-2 mb-6">
+                        <!-- Technologies will be inserted here by JavaScript -->
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a id="modal-live-link" href="#" target="_blank" class="px-5 py-2.5 gradient-bg text-white rounded-lg font-medium hover:shadow-lg transition flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                        </a>
+                        <a id="modal-code-link" href="#" target="_blank" class="px-5 py-2.5 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition flex items-center">
+                            <i class="fab fa-github mr-2"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Project Data
+const projectsData = {
+    1: {
+        title: "NexaShop E-Commerce",
+        category: "web",
+        image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        description: "A comprehensive e-commerce platform built with modern technologies to provide a seamless shopping experience. The platform includes real-time inventory management, secure payment processing, and an intuitive admin dashboard for business owners.",
+        features: [
+            "Real-time inventory tracking and management",
+            "Secure payment processing with Stripe integration",
+            "Advanced product filtering and search functionality",
+            "User authentication with role-based access control",
+            "Responsive design optimized for all devices"
+        ],
+        technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe API", "Redux", "Tailwind CSS"],
+        liveLink: "https://nexashop-demo.vercel.app",
+        codeLink: "https://github.com/lyesaallan/nexashop",
+        tags: ["Web App", "E-Commerce", "Full Stack"]
+    },
+    2: {
+        title: "FitTrack Pro",
+        category: "mobile",
+        image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        description: "A mobile fitness application designed to help users track workouts, monitor nutrition, and achieve their fitness goals. The app integrates with wearable devices to provide comprehensive health insights.",
+        features: [
+            "Custom workout plan creation and tracking",
+            "Nutrition logging with calorie counter",
+            "Integration with Apple HealthKit and Google Fit",
+            "Progress visualization with charts and graphs",
+            "Social features for sharing achievements"
+        ],
+        technologies: ["React Native", "Firebase", "Redux", "HealthKit API", "Chart.js", "NativeBase"],
+        liveLink: "https://fittrack-demo.vercel.app",
+        codeLink: "https://github.com/lyesaallan/fittrack",
+        tags: ["Mobile App", "Fitness", "Health"]
+    },
+    3: {
+        title: "FinDash Analytics Suite",
+        category: "design",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        description: "A user interface design project for a financial analytics dashboard. The design focuses on data visualization, intuitive navigation, and providing actionable insights for financial decision-makers.",
+        features: [
+            "Interactive data visualizations with real-time updates",
+            "Customizable dashboard with drag-and-drop widgets",
+            "Multi-account financial tracking and reporting",
+            "Dark/light mode for different working environments",
+            "Accessibility compliant design standards"
+        ],
+        technologies: ["Figma", "Adobe XD", "Prototyping", "User Research", "Design Systems"],
+        liveLink: "https://dribbble.com/findash-design",
+        codeLink: "https://github.com/lyesaallan/findash-design",
+        tags: ["UI/UX Design", "Dashboard", "Finance"]
+    }
+};
+
+// Project Filter Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.project-filter');
+    const projectItems = document.querySelectorAll('.project-item');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+            
+            // Update active button
+            filterButtons.forEach(btn => {
+                btn.classList.remove('bg-indigo-600', 'text-white');
+                btn.classList.add('bg-gray-200', 'dark:bg-gray-800', 'text-gray-700', 'dark:text-gray-300');
+            });
+            
+            this.classList.remove('bg-gray-200', 'dark:bg-gray-800', 'text-gray-700', 'dark:text-gray-300');
+            this.classList.add('bg-indigo-600', 'text-white');
+            
+            // Filter projects
+            projectItems.forEach(item => {
+                const category = item.getAttribute('data-category');
+                
+                if (filter === 'all' || category === filter) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, 10);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        });
+    });
+    
+    // Project Modal Functionality
+    const modal = document.getElementById('project-modal');
+    const closeModal = document.getElementById('close-modal');
+    const viewButtons = document.querySelectorAll('.view-project-detail');
+    
+    viewButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const projectId = this.getAttribute('data-project');
+            const project = projectsData[projectId];
+            
+            if (project) {
+                // Populate modal with project data
+                document.getElementById('modal-title').textContent = project.title;
+                document.getElementById('modal-image').src = project.image;
+                document.getElementById('modal-description').textContent = project.description;
+                document.getElementById('modal-live-link').href = project.liveLink;
+                document.getElementById('modal-code-link').href = project.codeLink;
+                
+                // Populate features
+                const featuresList = document.getElementById('modal-features');
+                featuresList.innerHTML = '';
+                project.features.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.className = 'flex items-start';
+                    li.innerHTML = `<i class="fas fa-check text-emerald-500 mt-1 mr-3"></i><span>${feature}</span>`;
+                    featuresList.appendChild(li);
+                });
+                
+                // Populate technologies
+                const techContainer = document.getElementById('modal-technologies');
+                techContainer.innerHTML = '';
+                project.technologies.forEach(tech => {
+                    const span = document.createElement('span');
+                    span.className = 'px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full';
+                    span.textContent = tech;
+                    techContainer.appendChild(span);
+                });
+                
+                // Populate tags
+                const tagsContainer = modal.querySelector('.flex.flex-wrap.gap-2.mb-6');
+                tagsContainer.innerHTML = '';
+                project.tags.forEach(tag => {
+                    const span = document.createElement('span');
+                    span.className = 'px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 text-sm font-medium rounded-full';
+                    span.textContent = tag;
+                    tagsContainer.appendChild(span);
+                });
+                
+                // Show modal
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+    
+    // Close modal
+    cl
     <!-- Contact Section -->
     <section id="contact" class="py-16 md:py-24 px-4">
         <div class="container mx-auto">
