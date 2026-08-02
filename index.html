@@ -434,7 +434,11 @@
                             <p class="opacity-90">I typically respond within 24 hours. Looking forward to connecting with you!</p>
                         </div>
                         <div class="md:w-3/5 p-8 md:p-12">
-                            <form id="contact-form action="https://api.web3forms.com/submit" method="POST">
+                            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="44e0a7e3-d1b7-4726-b2d5-c0144912fb0b">
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none">
+                             <input type="hidden" name="subject" value="New message from lyesaallan.com">
+                              <input type="hidden" name="from_name" value="lyesaallan website">
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                                     <div>
                                         <label class="block text-gray-700 dark:text-gray-300 mb-2" for="name">Full Name</label>
