@@ -644,6 +644,76 @@
                 typewriter.parentNode.replaceChild(clone, typewriter);
             }
         });
+        (function () {
+
+  const form = document.getElementById("contact-form");
+
+  if (!form) return;
+
+  const btn = form.querySelector('button[type="submit"]');
+
+  const status = document.getElementById("form-status");
+
+
+  form.addEventListener("submit", async (e) => {
+
+    e.preventDefault();
+
+    btn.disabled = true;
+
+    const original = btn.innerHTML;
+
+    btn.innerHTML = '<span>Sending...</span>';
+
+
+    try {
+
+      const res = await fetch("https://api.web3forms.com/submit", {
+
+        method: "POST",
+
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+
+        status.style.display = "block";
+
+        status.style.color = "#10b981";
+
+        status.textContent = `✓ Message sent. I'll get back to you soon.${name}`;
+
+        form.reset();
+
+      } else {
+
+        throw new Error(data.message || "Something went wrong");
+
+      }
+
+    } catch (err) {
+
+      status.style.display = "block";
+
+      status.style.color = "#ef4444";
+
+      status.textContent = "✕ " + (err.message || "Failed to send. Try emailing directly.");
+
+    } finally {
+
+      btn.disabled = false;
+
+      btn.innerHTML = original;
+
+    }
+
+  });
+            
     </script>
 </body>
 </html>
